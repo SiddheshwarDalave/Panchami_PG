@@ -1,0 +1,30 @@
+/* Contact.css */
+.contact {
+    padding: 80px 20px;
+ 
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.contact p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

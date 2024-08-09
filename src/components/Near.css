@@ -1,0 +1,65 @@
+/* Near.css */
+.near {
+    padding: 80px 20px;
+    /* background-color: #eaeaea; */
+    text-align: center;
+}
+
+.near h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.location-grid .location-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.location-grid .location-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.location-grid .location-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.location-grid .location-box h3 {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.location-grid .location-box p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .location-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .location-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,43 @@
+/* Facilities.css */
+.facilities {
+    padding: 80px 20px;
+  
+    text-align: center;
+}
+
+.facilities h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.facilities ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.facilities ul li {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.facility-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.facility-images img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.facility-images img:hover {
+    transform: scale(1.05);
+}
